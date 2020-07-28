@@ -1,0 +1,12 @@
+
+.container{
+    background-color: rgb(241, 211, 211);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightslategray;
+}
+
+p{
+    font-style: italic;
+    font-weight: 500;
+}
