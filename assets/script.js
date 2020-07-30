@@ -25,7 +25,7 @@ var questionArr = [
     },
     {
        question: "What is the name of the knot that is used to tie an anglers leader to their fly line and typical calls for a piece of hardware to tie?", 
-       answers: ["Palomar Knot", "Blood Knot", "Surgeons Knot, Nail Knot"],
+       answers: ["Palomar Knot", "Blood Knot", "Surgeons Knot", "Nail Knot"],
        correctAnswer: "Nail Knot"
     },
     {
@@ -59,11 +59,13 @@ var highScoreCard = $("#highScore");
 var questionArea = document.querySelector("#question");
 var start = document.querySelector("#startBtn");
 //function to reveal our quiz card and begin the timer
+var index = 0;
+
 function startQuiz(){
-      var index = 0;
+      console.log("Index: " + index);
+
       $("#question").text(questionArr[index].question);
       $(".answer1").text(questionArr[index].answers[0]);
-      console.log(questionArr[index].answers[index]);
       $(".answer2").text(questionArr[index].answers[1]);
       $(".answer3").text(questionArr[index].answers[2]);
       $(".answer4").text(questionArr[index].answers[3]);
@@ -72,7 +74,33 @@ function startQuiz(){
       // var userChoice = $(this).on
 
       $(".answers").on("click", function(){
-
+         var userChoice = $(this).text();
+         if(userChoice === questionArr[index].correctAnswer){
+            userScore++;
+            index++;
+            console.log("Score: " + userScore);
+            if(questionArr.length > index){
+               startQuiz();
+            }
+            else{
+               // print user score to page
+               // set final score to local storage
+               // navigate to high score page
+            }
+         }
+         else{
+            index++;
+            time = time -10;
+            if(questionArr.length > index){
+               startQuiz();
+            }
+            else{
+               // print user score to page
+               // set final score to local storage
+               // navigate to high score page
+            }
+         }
+         console.log(userChoice);
       });
 
    
