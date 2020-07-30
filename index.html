@@ -7,6 +7,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <link rel="stylesheet" href="assets/style.css">
 <title>Fly Fishing Challenge</title>
 </head>
@@ -22,26 +23,42 @@
             </div>
         </div>
     </header>
-    <div class="card text-center mt-5" style="background-color: red">
+    <!-- landing card  -->
+    <div class="card text-center mt-5" id="start" style="background-color: red">
         <div class="card-body" style = "background-color: lightgray">
             <h1>Fly Fishing Challenge</h1>
             <hr>
-            <p class = "text-center" id="question">Howdy and salutations! Are you ready to test your knowledge of aerial angling? Fly fishing often comes off as a hoity toity mans sport but it is open to any and all participants. Now lets see if you got what it takes to ace this quiz!
+            <p class = "text-center">Howdy and salutations! Are you ready to test your knowledge of aerial angling? Fly fishing often comes off as a hoity toity mans sport but it is open to any and all participants. Now lets see if you got what it takes to ace this quiz!
             </p>
-            <ul class=“list-group text-center”>
-                <li class=“list-group-item”><button class=“btn btn-primary answer1 answers” value=“1”>Cras justo
-                        odio</button></li>
-                <li class=“list-group-item”><button class=“btn btn-primary answer2 answers” value=“2">Dapibus ac
-                        facilisis in</button></li>
-                <li class=“list-group-item”><button class=“btn btn-primary answer3 answers” value=“3”>Morbi leo
-                        risus</button></li>
-                <li class=“list-group-item”><button class=“btn btn-primary answer4 answers” value=“4">Porta ac
-                        consectetur ac</button></li>
-            </ul>
-            
-
+            <button class = "btn btn-primary startButton">Start</button>
         </div>
     </div>
+    <!-- questions card -->
+    <div class="card text-center mt-5" id= "quiz"  style="background-color: red">
+        <div class="card-body" style = "background-color: lightgray">
+            <p class = "text-left" id = "question"></p>
+            <hr>
+            <ul class="button-group text-left">
+                <li><button class="btn btn-primary answers answer1" value = "1">text</button></li>
+                <li> <button class="btn btn-primary answers answer2" value = "2">text</button></li>
+                <li><button class="btn btn-primary answers answer3" value = "3">text</button></li>
+                <li>  <button class="btn btn-primary answers answer4" value = "4">text</button></li>
+            </ul>
+        </div>
+    </div>
+    <!-- highschore card -->
+    <div class="card text-center mt-5" id= "highScore"  style="background-color: red">
+        <div class="card-body" style = "background-color: lightgray">
+            <h1>New High Score!</h1>
+            <hr>
+            <form class="form-group">
+            <label for = "playerInitials">Please enter your intials!</label>
+            <input type="text" placeholder = "initials" id="playerInitials">
+            <button type = "submit" class="btn btn-primary">Confirm</button>
+        </form>
+        </div>
+    </div>
+
 
 
 <script src = "./assets/script.js"></script>

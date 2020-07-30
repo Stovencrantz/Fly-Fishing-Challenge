@@ -1,11 +1,3 @@
-/* 
-.container{
-    background-color: rgb(241, 211, 211);
-    border-style: solid;
-    border-radius: 10px;
-    border-color: lightslategray;
-} */
-
 .card{
     width: 40%;
     margin: auto;
@@ -14,4 +6,11 @@
 p{
     font-style: italic;
     font-weight: 500;
+}
+ul{
+    list-style: none;
+}
+
+.answers{
+    margin-top: 5px;
 }
