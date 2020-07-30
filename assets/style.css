@@ -1,9 +1,14 @@
-
+/* 
 .container{
     background-color: rgb(241, 211, 211);
     border-style: solid;
     border-radius: 10px;
     border-color: lightslategray;
+} */
+
+.card{
+    width: 40%;
+    margin: auto;
 }
 
 p{

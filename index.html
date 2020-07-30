@@ -8,23 +8,41 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="">
 <title>Fly Fishing Challenge</title>
 </head>
 <body>
 
-    <header></header>
-    <div class="container w-50 h-50 mt-5 ">
-        <div class="row text-center">
-            <div class="col mx-5 my-5 px-5">
-                <h1>Fly Fishing Challenge</h1>
-                <hr>
-                    <p>Good Day! Are you ready to test your knowledge on the hoity toity sport of fly fishing!? I sure hope you are, because you're gonna be on the clock! You have 60 seconds to answer all the questions, but watch out, each one you get incorrect will penalize you and dock your time! Now pull up your waders and put on your thinking cap, because its time to get fishy!    
-                    </p>
-                <button type="button" class="btn btn-primary btn-lg btn-outline-dark" id="startBtn">Start</button>
+    <header style = "max-width: 100%;">
+        <div class="row justify-content-between mx-4">
+            <div class="col-sm-6 text-left ">
+                <a href="html/highscoresPage/highScores.html" id="highSchores">View High Score</a>
+            </div>
+            <div class="col-sm-6 text-right ">
+                <p id= "timer">Time</p>
             </div>
         </div>
+    </header>
+    <div class="card text-center mt-5" style="background-color: red">
+        <div class="card-body" style = "background-color: lightgray">
+            <h1>Fly Fishing Challenge</h1>
+            <hr>
+            <p class = "text-center" id="question">Howdy and salutations! Are you ready to test your knowledge of aerial angling? Fly fishing often comes off as a hoity toity mans sport but it is open to any and all participants. Now lets see if you got what it takes to ace this quiz!
+            </p>
+            <ul class=“list-group text-center”>
+                <li class=“list-group-item”><button class=“btn btn-primary answer1 answers” value=“1”>Cras justo
+                        odio</button></li>
+                <li class=“list-group-item”><button class=“btn btn-primary answer2 answers” value=“2">Dapibus ac
+                        facilisis in</button></li>
+                <li class=“list-group-item”><button class=“btn btn-primary answer3 answers” value=“3”>Morbi leo
+                        risus</button></li>
+                <li class=“list-group-item”><button class=“btn btn-primary answer4 answers” value=“4">Porta ac
+                        consectetur ac</button></li>
+            </ul>
+            
+
+        </div>
     </div>
+
 
 <script src = "./assets/script.js"></script>
 
